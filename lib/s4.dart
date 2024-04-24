@@ -13,7 +13,7 @@ class S4Notifier extends _$S4Notifier {
       controller.add('メッセージが${t.tick}件届きました');
     });
     // 4秒後にストップ
-    const sec4 = Duration(seconds: 4);
+    const sec4 = Duration(seconds: 11);
     Future.delayed(sec4, () {
       timer.cancel();
       controller.sink.close();
